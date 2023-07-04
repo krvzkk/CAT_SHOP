@@ -1,0 +1,120 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="Admin_page.master.cs" Inherits="Admin_page" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title></title>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+
+        .auto-style1 {
+            width: 100%;
+            height: 1129px;
+        }
+        .auto-style3 {
+            width: 301px;
+            height: 178px;
+        }
+        .auto-style5 {
+            height: 178px;
+            width: 1178px;
+        }
+        .auto-style12 {
+            font-size: 75px;
+        }
+        .auto-style4 {
+            height: 178px;
+            width: 492px;
+        }
+        .auto-style6 {
+            width: 92%;
+            height: 102px;
+            margin-left: 0px;
+        }
+        .auto-style7 {
+            margin-left: 0px;
+        }
+        .auto-style2 {
+            width: 301px;
+        }
+        .auto-style10 {
+            width: 100%;
+            height: 287px;
+        }
+        .auto-style11 {
+            font-size: medium;
+            color: #FFFFFF;
+            text-transform: uppercase;
+            text-decoration: overline;
+            font-family: "Bahnschrift Light SemiCondensed";
+        }
+        .auto-style14 {
+            font-family: Bahnschrift;
+            color: #008080;
+        }
+        .auto-style39 {
+            width: 156px;
+            height: 152px;
+        }
+    </style>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div>
+        <table class="auto-style1">
+            <tr>
+                <td class="auto-style3" style="background-color: #9999FF; font-family: 'Bahnschrift Condensed'; font-size: xx-large; font-weight: bold; font-style: inherit; font-variant: small-caps; color: #FFFFFF; vertical-align: middle; text-align: center; border-bottom-style: groove">
+                    <img alt="" class="auto-style39" src="img/kittens-shop.png" /></td>
+                <td class="auto-style5" style="background-color: #9999FF; font-family: 'Bahnschrift Condensed'; font-size: 91px; font-weight: bold; font-style: inherit; font-variant: small-caps; color: #FFFFFF; vertical-align: middle; text-align: center; border-bottom-style: groove">
+                    <asp:Label ID="Label2" runat="server" CssClass="auto-style12" Text="МАГАЗИН КОТИКОВ"></asp:Label>
+                </td>
+                <td class="auto-style4" style="background-color: #9999FF; font-family: 'Bahnschrift Condensed'; font-size: medium; font-weight: bold; font-style: inherit; font-variant: small-caps; color: #FFFFFF; vertical-align: middle; text-align: center; border-bottom-style: groove">
+                    <table class="auto-style6">
+                        <tr>
+                            <td>
+                                <asp:Label ID="Label1" runat="server">Вы на странице администратора</asp:Label>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <asp:Button ID="Button2" runat="server" BackColor="#FFCCCC" CssClass="auto-style7" Text="Переход на страницу пользователя" Width="408px" OnClick="Button2_Click" />
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+            <tr>
+                <td class="auto-style2" style="background-color: #CCCCFF; vertical-align: top; text-align: center;">
+                    <table class="auto-style10">
+                        <tr>
+                            <td style="border-style: dotted; color: #008080;"><strong>
+                                <asp:LinkButton ID="LinkButton1" runat="server" BackColor="#CCCCFF" CssClass="auto-style11" ForeColor="#006666" OnClick="LinkButton1_Click">главная</asp:LinkButton>
+                                </strong></td>
+                        </tr>
+                        <tr>
+                            <td style="border-style: dotted; color: #008080;"><strong>
+                                <asp:LinkButton ID="LinkButton2" runat="server" BackColor="#CCCCFF" CssClass="auto-style11" ForeColor="#006666" OnClick="LinkButton2_Click">изменить котика</asp:LinkButton>
+                                </strong></td>
+                        </tr>
+                        <tr>
+                            <td style="border-style: dotted; color: #008080;"><strong>
+                                <asp:LinkButton ID="LinkButton3" runat="server" BackColor="#CCCCFF" CssClass="auto-style11" ForeColor="#006666" OnClick="LinkButton3_Click">добавить котика</asp:LinkButton>
+                                </strong></td>
+                        </tr>
+                    </table>
+                </td>
+                <td colspan="2" style="background-color: #CCFFFF; vertical-align: top">
+                    <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                        <p class="auto-style14">
+                            &nbsp;</p>
+                    </asp:ContentPlaceHolder>
+                </td>
+            </tr>
+        </table>
+    </div>
+    </form>
+</body>
+</html>
